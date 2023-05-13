@@ -1,7 +1,7 @@
-import time
-import turtle
 import random
-bg_pics_list = ["bg.pic.gif", "bg.pic_2.gif","bg.pic_3.gif","bg.pic_4.gif","bg.pic_5.gif","bg.pic_6.gif" ]
+import turtle
+
+bg_pics_list = ["bg.pic.gif", "bg.pic_2.gif", "bg.pic_3.gif", "bg.pic_4.gif", "bg.pic_5.gif", "bg.pic_6.gif"]
 x = random.choice(bg_pics_list)
 # screen_turtle
 kaplumbaga_screen = turtle.Screen()
@@ -23,7 +23,7 @@ y_coordinates = [20, 10, 0, -10, -20]
 
 def setup_score_turtle():
     score_turtle.hideturtle()
-    if x =="bg.pic_3.gif":
+    if x == "bg.pic_3.gif":
         score_turtle.color("white")
 
     else:
@@ -34,9 +34,6 @@ def setup_score_turtle():
     y = top_height * 0.9
     score_turtle.setpos(0, y)
     score_turtle.write(arg='Score: 0', move=False, align='center', font=FONT)
-
-
-
 
 
 # kaplumbaga yapmak
